@@ -8,7 +8,7 @@ on:
     - cron: "33 7 * * 0" # Sunday at UTC 7:33
 
 env:
-  GH_PAT: ${{ secrets.GH_PAT }}
+  GH_PAT: ${{ secrets.GH_sPAT }}
   UPSTREAM_REPO: LoopKit/LoopWorkspace
   UPSTREAM_BRANCH: ${{ github.ref_name }} # branch on upstream repository to sync from (replace with specific branch name if needed)
   TARGET_BRANCH: ${{ github.ref_name }} # target branch on fork to be kept in sync
@@ -220,7 +220,7 @@ jobs:
           # The "" is a continuation character 
           #   the line following a "" should not be blank
           /bin/bash -c "$(curl -fsSL \
-          https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/
+          https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomzationsSelect.sh)"\
           future_carbs_4h \
           now_line \
           2hlollipop \
