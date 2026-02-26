@@ -214,8 +214,7 @@ jobs:
           git clone https://github.com/johandegraeve/xdrip-client-swift-1.git xdrip-client-swift
           
           echo "Applying customization to add CGM support to Loop for xDrip4iOS"
-          curl https://github.com/loopandlearn/LoopWorkspace/commit/4097af116ab869084329660c4761bbddff5b7d03.patch | git apply
-          
+          curl https://github.com/loopandlearn/LoopWorkspace/commit/4097af116ab869084329660c4761bbddff5b7d03.patch | git apply    
           # The lines below add the customizations listed using the CustomizationSelect script
           # The "\" is a continuation character 
           #   the line following a "\" should not be blank
