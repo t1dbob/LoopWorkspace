@@ -213,10 +213,12 @@ jobs:
           /bin/bash -c "$(curl -fsSL \
           https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)" \
           future_carbs_4h \
-          high_carb_limit \
+          2hlollipop \
+          meal_days \
           now_line \
           watch_title \
           profiles \
+          basal_lock \
           negative_insulin \
           xdrip_cgm
            
